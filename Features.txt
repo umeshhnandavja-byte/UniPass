@@ -1,0 +1,8 @@
+    realtime application tracking
+
+admin
+    documents which have < 85 percent confident given for review
+
+ai
+    evaluation
+    verification of documents

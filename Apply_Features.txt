@@ -1,0 +1,27 @@
+apply - Umeshh Nanda
+    details
+        Full Name
+        DOB
+        Place of Birth
+        Nationality
+        Passport number
+        Family details if someone is paying
+        family dependents accompany you
+        Letter of Acceptance
+            I-20 - US 
+            CAS - UK
+            COE - Australia
+        Financial Proof
+            bankstatements
+            loan sanction Letter
+            official scholarship certificate
+        Academic Credentials
+            Class 10
+            Class 12
+            Bachelors
+        Health
+            TB CLearance
+            Police clearance Certificate by local regional passport office
+            Vaccination Records
+        purpose
+            purpose details
