@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application For Universities</title>
+    <link rel="stylesheet" href="index.css">
+    <title>UniPass - Student Admissions & Visa Sponsorship Application</title>
+    <style>
+        
+    </style>
 </head>
 <body>
-    <form></form>
+
+<div class="container">
+    <div class="header">
+        <h1>UniPass Student Application Portal</h1>
+        <p>Complete your intake profile to apply and trigger automated visa sponsorship eligibility processing (US Form I-20 / UK CAS / Australia eCoE).</p>
+    </div>
+
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        
+        <!-- SECTION 1: PROGRAM SELECTION -->
+        <div class="section-title">1. Target Institution & Country Selection</div>
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="destination-country">Destination Country *</label>
+                <select id="destination-country" required>
+                    <option value="">-- Select Destination --</option>
+                    <option value="US">United States (Form I-20 / SEVIS)</option>
+                    <option value="UK">United Kingdom (CAS)</option>
+                    <option value="AU">Australia (eCoE)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="target-university">Target University *</label>
+                <input type="text" id="target-university" placeholder="e.g. Northeastern University" required>
+            </div>
+            <div class="form-group full-width">
+                <label for="program-name">Intended Program of Study *</label>
+                <input type="text" id="program-name" placeholder="e.g. M.S. in Computer Science" required>
+            </div>
+        </div>
+
+        <!-- SECTION 2: PERSONAL IDENTITY -->
+        <div class="section-title">
+            2. Legal Identity Details
+            <span class="badge">Verified via Passport MRZ</span>
+        </div>
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="given-name">Given Name(s) (as per Passport) *</label>
+                <input type="text" id="given-name" placeholder="First Name & Middle Name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname / Last Name (as per Passport) *</label>
+                <input type="text" id="surname" placeholder="Family Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" placeholder="student@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="citizenship">Country of Citizenship *</label>
+                <input type="text" id="citizenship" placeholder="e.g. India" required>
+            </div>
+            <div class="form-group">
+                <label for="passport-num">Passport Number *</label>
+                <input type="text" id="passport-num" placeholder="e.g. Z1234567" required>
+            </div>
+        </div>
+
+        <!-- SECTION 3: ACADEMIC & SOLVENCY DOCUMENTS -->
+        <div class="section-title">3. Document Uploads for AI Verification</div>
+        <div class="form-grid">
+            <div class="form-group full-width file-upload-box">
+                <label for="passport-file">
+                    <strong>Upload Passport Bio Page (with MRZ Zone) *</strong><br>
+                    <small>Used as legal identity anchor to prevent name inversion errors.</small>
+                </label>
+                <br>
+                <input type="file" id="passport-file" accept=".pdf, .png, .jpg, .jpeg" required>
+            </div>
+
+            <div class="form-group full-width file-upload-box">
+                <label for="transcript-file">
+                    <strong>Upload Official Academic Transcripts *</strong><br>
+                    <small>Processed by AI to standardize foreign grading systems into a 4.0 GPA scale.</small>
+                </label>
+                <br>
+                <input type="file" id="transcript-file" accept=".pdf" required>
+            </div>
+
+            <div class="form-group full-width file-upload-box">
+                <label for="bank-file">
+                    <strong>Upload Official Bank Statement(s) *</strong><br>
+                    <small>Parsed for multi-currency liquid balance conversion against tuition thresholds.</small>
+                </label>
+                <br>
+                <input type="file" id="bank-file" accept=".pdf" required>
+            </div>
+        </div>
+
+        <!-- SUBMIT -->
+        <button type="submit">Submit Application to UniPass Engine</button>
+    </form>
+</div>
+
 </body>
 </html>
