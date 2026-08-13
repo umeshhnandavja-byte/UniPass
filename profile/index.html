@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniPass - Applicant Profile & Application Status</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- APPLICANT PROFILE HEADER -->
+    <div class="profile-card">
+        <div class="user-info">
+            <div class="avatar">JS</div>
+            <div class="user-details">
+                <h2>John Smith</h2>
+                <p>john.smith@example.com | Citizenship: India</p>
+            </div>
+        </div>
+        <div class="app-id-badge">App ID: UP-2026-8841</div>
+    </div>
+
+    <!-- APPLICATION STATUS TIMELINE -->
+    <div class="status-banner">
+        <div class="section-title">Visa Sponsorship Processing Status</div>
+        <div class="timeline">
+            <div class="timeline-step step-completed">
+                <div class="step-circle">✓</div>
+                <div class="step-label">Application Submitted</div>
+            </div>
+            <div class="timeline-step step-completed">
+                <div class="step-circle">✓</div>
+                <div class="step-label">AI Verification Complete</div>
+            </div>
+            <div class="timeline-step step-active">
+                <div class="step-circle">3</div>
+                <div class="step-label">DSO Final Review</div>
+            </div>
+            <div class="timeline-step">
+                <div class="step-circle">4</div>
+                <div class="step-label">Form I-20 Issued</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN INFORMATION GRID -->
+    <div class="grid-layout">
+        
+        <!-- COLUMN 1: TARGET PROGRAM & IDENTIFICATION -->
+        <div class="card">
+            <div class="section-title">Target Program & Identity Details</div>
+            
+            <div class="info-group">
+                <div class="info-label">Destination Country</div>
+                <div class="info-value">United States (Form I-20 / SEVIS)</div>
+            </div>
+
+            <div class="info-group">
+                <div class="info-label">Target Institution</div>
+                <div class="info-value">Northeastern University</div>
+            </div>
+
+            <div class="info-group">
+                <div class="info-label">Intended Program</div>
+                <div class="info-value">M.S. in Computer Science (Fall 2026)</div>
+            </div>
+
+            <div class="info-group">
+                <div class="info-label">Passport Legal Name Anchor</div>
+                <div class="info-value">SMITH, John (MRZ Validated)</div>
+            </div>
+
+            <div class="info-group">
+                <div class="info-label">Passport Number</div>
+                <div class="info-value">Z1234567</div>
+            </div>
+        </div>
+
+        <!-- COLUMN 2: AI VERIFICATION & DOCUMENT STATUS -->
+        <div class="card">
+            <div class="section-title">Document Audit & Verification Status</div>
+            
+            <div class="doc-item">
+                <div>
+                    <div class="info-value">Passport MRZ Scan</div>
+                    <small style="color: #64748B;">Identity Anchored</small>
+                </div>
+                <span class="badge-verified">Verified 100%</span>
+            </div>
+
+            <div class="doc-item">
+                <div>
+                    <div class="info-value">Academic Transcripts</div>
+                    <small style="color: #64748B;">GPA Converted (3.82 / 4.0)</small>
+                </div>
+                <span class="badge-verified">Verified 100%</span>
+            </div>
+
+            <div class="doc-item">
+                <div>
+                    <div class="info-value">Bank Solvency Audit</div>
+                    <small style="color: #64748B;">Liquid Funds: $62,500 USD</small>
+                </div>
+                <span class="badge-verified">Verified 100%</span>
+            </div>
+
+            <div class="doc-item">
+                <div>
+                    <div class="info-value">SEVIS Payload Status</div>
+                    <small style="color: #64748B;">Ready for DSO Approval</small>
+                </div>
+                <span class="badge-pending">Pending DSO Click</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
