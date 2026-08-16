@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniPass - DSO Manual Verification & Audit Portal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="topbar-title">Uni<span>Pass</span> DSO Compliance Portal</div>
+        <div class="user-badge">Officer: Sarah Jenkins (Designated School Officer)</div>
+    </div>
+
+    <!-- MAIN MANUAL VERIFICATION WORKSPACE -->
+    <div class="workspace">
+
+        <!-- COLUMN 1: PASSPORT MRZ & IDENTITY VERIFICATION -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">1. Passport MRZ Legal Anchor Audit</h3>
+                <span class="badge-status" style="background-color: #E6FFFA; color: #047857;">MRZ Verified</span>
+            </div>
+
+            <div class="doc-viewer">
+                <div class="doc-viewer-icon">🛂</div>
+                <div>Passport Document Preview (P<IND<SMITH<<JOHN<<<<<<<<<<<<)</div>
+            </div>
+
+            <div class="data-row">
+                <span class="data-label">Extracted Surname (Line 1):</span>
+                <span class="data-value">SMITH <span class="match-tag">MRZ Match</span></span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Extracted Given Names (Line 1):</span>
+                <span class="data-value">JOHN <span class="match-tag">MRZ Match</span></span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Passport Number:</span>
+                <span class="data-value">Z1234567</span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Country of Citizenship:</span>
+                <span class="data-value">India (IND)</span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Name Inversion Flag:</span>
+                <span class="data-value" style="color: #047857;">Clear (No Inversion Detected)</span>
+            </div>
+        </div>
+
+        <!-- COLUMN 2: FINANCIAL SOLVENCY & ACADEMIC AUDIT -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">2. Financial Solvency & GPA Audit</h3>
+                <span class="badge-status">Awaiting DSO Action</span>
+            </div>
+
+            <div class="doc-viewer">
+                <div class="doc-viewer-icon">📄</div>
+                <div>Bank Statement & Transcript OCR Overlay</div>
+            </div>
+
+            <div class="data-row">
+                <span class="data-label">Target Immigration Framework:</span>
+                <span class="data-value">US SEVIS (Form I-20)</span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Required Financial Solvency:</span>
+                <span class="data-value">$58,000 USD / Year</span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Extracted Liquid Funds:</span>
+                <span class="data-value" style="color: #047857;">$62,500 USD (Converted from INR)</span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Converted Academic GPA:</span>
+                <span class="data-value">3.82 / 4.0 Scale</span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">NewgenONE Document Vault ID:</span>
+                <span class="data-value">ECM-DOC-994821</span>
+            </div>
+        </div>
+
+        <!-- FULL-WIDTH APPROVAL BAR -->
+        <div class="full-width-card">
+            <div>
+                <strong style="font-size: 16px; color: var(--primary-color);">DSO Final Action Required</strong>
+                <p style="margin: 4px 0 0 0; color: var(--text-muted); font-size: 14px;">Review completed. Approving will automatically generate the SEVIS JSON payload and trigger student notification.</p>
+            </div>
+            <div>
+                <button class="btn-reject" onclick="alert('Application Flagged for Student Re-upload.')">Request Revision</button>
+                <button class="btn-approve" onclick="alert('Success: SEVIS Payload Generated & Form I-20 Approved!')">Approve & Issue Form I-20 Payload</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
