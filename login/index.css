@@ -1,0 +1,156 @@
+
+        :root {
+            --primary-color: #0A2540;
+            --accent-color: #635BFF;
+            --accent-hover: #4B45E4;
+            --bg-color: #F8F9FA;
+            --card-bg: #FFFFFF;
+            --text-main: #2D3748;
+            --text-muted: #64748B;
+            --border-color: #E2E8F0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .auth-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 420px;
+            padding: 40px;
+        }
+
+        .auth-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .auth-header p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Role Selector Tabs */
+        .role-toggle {
+            display: flex;
+            background-color: #F1F5F9;
+            border-radius: 8px;
+            padding: 4px;
+            margin-bottom: 24px;
+        }
+
+        .role-btn {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            background: transparent;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .role-btn.active {
+            background-color: var(--card-bg);
+            color: var(--primary-color);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 6px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            padding: 12px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.1);
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            margin-bottom: 24px;
+        }
+
+        .form-actions a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .btn-submit {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .auth-footer {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .auth-footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
